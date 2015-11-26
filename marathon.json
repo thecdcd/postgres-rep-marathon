@@ -1,0 +1,20 @@
+{
+  "app": {
+    "args": null,
+    "cmd": "sh run_rep.sh",
+    "cpus": 0.5,
+    "disk": 10240,
+    "env": {
+      "CONFIG_URL": "http://web01/postgres/conf",
+      "POSTGRES_MASTER": "postgres01",
+      "POSTGRES_REPUSER": "replicator",
+      "RUN_USER": "postgres"
+    },
+    "id": "/postgres-replication",
+    "maxLaunchDelaySeconds": 3600,
+    "mem": 512,
+    "uris": [
+      "http://web01/postgres/run_rep.sh"
+    ]
+  }
+}
